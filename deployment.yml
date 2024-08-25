@@ -1,0 +1,22 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: spring-devops-deployment
+  namespace: darshandimpu-dev
+  labels:
+    app: spring-devops
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: spring-devops
+  template:
+    metadata:
+      labels:
+        app: spring-devops
+    spec:
+      containers:
+        - name: spring-devops-container
+          image: dimpuchr/spring-devops:1.1
+          ports:
+            - containerPort: 8080

@@ -1,4 +1,4 @@
-package com.dar.devops.spring_devops_demo;
+package com.dar.devops;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

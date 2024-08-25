@@ -1,4 +1,4 @@
-package com.dar.devops.spring_devops_demo;
+package com.dar.devops;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;

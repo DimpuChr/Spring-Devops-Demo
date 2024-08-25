@@ -1,0 +1,13 @@
+apiVersion: route.openshift.io/v1
+kind: Route
+metadata:
+  name: spring-devops-route
+  namespace: darshandimpu-dev
+spec:
+  to:
+    kind: Service
+    name: spring-devops-service
+  port:
+    targetPort: 8080
+  tls:
+    termination: edge
